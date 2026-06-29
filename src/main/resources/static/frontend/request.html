@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заявки</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="page">
+    <section class="card">
+        <h1>Новая заявка</h1>
+
+        <select id="transportType">
+            <option value="">Выберите транспорт</option>
+            <option value="Автобус">Автобус</option>
+            <option value="Электробус">Электробус</option>
+            <option value="Трамвай">Трамвай</option>
+        </select>
+
+        <input
+                id="startDate"
+                type="text"
+                placeholder="ДД.ММ.ГГГГ"
+                maxlength="10"
+                inputmode="numeric"
+                pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}"
+        >
+
+        <p class="subtitle">Введите дату начала обучения в формате ДД.ММ.ГГГГ</p>
+
+<!--        <input id="startDate" type="date">-->
+
+        <select id="paymentType">
+            <option value="">Выберите способ оплаты</option>
+            <option value="Наличные">Наличные</option>
+            <option value="Банковская карта">Банковская карта</option>
+            <option value="Онлайн-оплата">Онлайн-оплата</option>
+        </select>
+
+        <button id="sendRequestBtn">Отправить заявку</button>
+
+        <p id="message"></p>
+
+        <a href="cabinet.html">Назад в кабинет</a>
+    </section>
+</main>
+<script src="js/api.js"></script>
+<script src="js/request.js"></script>
+</body>
+</html>

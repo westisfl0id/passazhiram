@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Администратор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="page">
+    <section class="card">
+        <h1>Панель администратора</h1>
+
+        <select id="statusFilter">
+            <option value="">Все заявки</option>
+            <option value="Новая">Новая</option>
+            <option value="Идет обучение">Идет обучение</option>
+            <option value="Обучение завершено">Обучение завершено</option>
+        </select>
+
+        <div id="adminRequests"></div>
+
+        <button id="logoutBtn">Выйти</button>
+    </section>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
